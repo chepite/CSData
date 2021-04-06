@@ -1,0 +1,179 @@
+/*
+colours
+#171827 cs background color achtig
+#252635 /donkergrijs/blauw
+#3d3f53 tussengrijs/blauw
+#a1a3c2 lichtgrijs/blauw
+#525ad3 blauw
+#cf3723 rood
+//misschien kijken voor cs geel en rood --> handig als ik stats wil tonen
+*/
+/*font-family: 'Montserrat', sans-serif;*/
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  width: 60rem;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #171827;
+  color: #a1a3c2;
+}
+.nav {
+  font-weight: 500;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.nav__list {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+.nav__list--item {
+  margin: 1rem;
+}
+.nav__list--item a {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+}
+.nav__list--item a:hover {
+  color: #525ad3;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.colorOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #171827;
+  opacity: 0.5;
+}
+.highlight__subtitle {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 5px solid #a1a3c2;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.highlight__match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+  width: 60rem;
+  height: 20rem;
+  border-radius: 5rem;
+  /*background settings*/
+  /* background-image: url(../assets/images/banners/de_nuke_banner.jpg); */
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*graying out background image*/
+  /* background-color: #a1a3c2;  */
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%); */
+}
+.highlight__match--info {
+  color: white;
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.highlight__match--title {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  /* grid-area: title; */
+}
+.highlight__match--map {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* grid-area: map; */
+}
+.highlight__match--score {
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: row;
+}
+.highlight__match--score p {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+.highlight__length {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(226, 226, 226);
+}
+.matchesForm {
+  display: flex;
+  justify-content: center;
+}
+input {
+  font-size: 1.2rem;
+  color: #a1a3c2;
+  background-color: #171827;
+  border: 3px solid #a1a3c2;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+.matchesForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading__sentence {
+  margin-top: 2rem;
+}
+label {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.matchesForm__div {
+  display: flex;
+  flex-direction: column;
+}
+/*fixes difference with the normal input with text and the submit without any label*/
+input[type="submit"] {
+  align-self: flex-end;
+}
+a,
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+.error {
+  color: red;
+}
